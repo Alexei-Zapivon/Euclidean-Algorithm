@@ -54,7 +54,7 @@ function showResult() {
 
 // Функция для возврата на главную страницу
 function goHome() {
-    window.location.href = 'index.php';
+    window.location.href = 'index.html';
 }
 // Функция для открытия теста (вызывается при загрузке страницы)
 window.onload = function () {
