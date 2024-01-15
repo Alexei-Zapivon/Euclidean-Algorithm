@@ -4,7 +4,7 @@ function calculateGCD() {
     const nokNum = document.getElementById('nok-num');
     const nodNum = document.getElementById('nod-num');
 
-    if (!isNaN(a) && !isNaN(b) && a, b > 0) {
+    if (!isNaN(a) && !isNaN(b) && a > 0 && b > 0) {
         nokNum.innerText = `НОК: ${a}, ${b} = ${NOK(a, b)}`;
         nodNum.innerText = `НОД: ${a}, ${b} = ${NOD(a, b)}`;
     } else {
@@ -26,7 +26,7 @@ function NOD(a, b) {
 }
 //вычесляет НОК
 function NOK(a, b) {
-    return (Math.abs(a * b) / NOD(a, b));
+    return Math.abs(a * b) / NOD(a, b);
 }
 
 function copyTextToClipboard() {
