@@ -25,15 +25,28 @@ function nextQuestion() {
 
 // Функция для проверки правильных ответов
 function checkAnswers(answers) {
-    if (currentQuestion === 1 && answers[0].value === 'a') {
+    if (currentQuestion === 1 && answers[0].value === 'b') {
         correctAnswers++;
-    } else if (currentQuestion === 2 && answers.length === 1 && answers[0].value === 'a') {
+    } else if (currentQuestion === 2 && answers.length === 1 && answers[0].value === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 3 && answers.length === 1 && answers[0].value === 'a') {
+    } else if (currentQuestion === 3 && answers.length === 1 && answers[0].value === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 4 && answers.length === 1 && answers[0].value === 'a') {
+    } else if (currentQuestion === 4 && answers.length === 1 && answers[0].value === 'c') {
+        correctAnswers++;
+    } else if (currentQuestion === 5 && answers.length === 1 && answers[0].value === 'c') {
+        correctAnswers++;
+    } else if (currentQuestion === 6 && answers.length === 1 && answers[0].value === 'a') {
+        correctAnswers++;
+    } else if (currentQuestion === 7 && answers.length === 1 && answers[0].value === 'c') {
+        correctAnswers++;
+    } else if (currentQuestion === 8 && answers.length === 1 && answers[0].value === 'c') {
+        correctAnswers++;
+    } else if (currentQuestion === 9 && answers.length === 1 && answers[0].value === 'b') {
+        correctAnswers++;
+    } else if (currentQuestion === 10 && answers.length === 1 && answers[0].value === 'c') {
         correctAnswers++;
     }
+    
     
 }
 
