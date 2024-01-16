@@ -25,25 +25,26 @@ function nextQuestion() {
 
 // Функция для проверки правильных ответов
 function checkAnswers(answers) {
+    let legtarr = answers.length === 1 && answers[0].value
     if (currentQuestion === 1 && answers[0].value === 'b') {
         correctAnswers++;
-    } else if (currentQuestion === 2 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 2 && legtarr === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 3 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 3 && legtarr === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 4 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 4 && legtarr === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 5 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 5 && legtarr === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 6 && answers.length === 1 && answers[0].value === 'a') {
+    } else if (currentQuestion === 6 && legtarr === 'a') {
         correctAnswers++;
-    } else if (currentQuestion === 7 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 7 && legtarr === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 8 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 8 && legtarr === 'c') {
         correctAnswers++;
-    } else if (currentQuestion === 9 && answers.length === 1 && answers[0].value === 'b') {
+    } else if (currentQuestion === 9 && legtarr === 'b') {
         correctAnswers++;
-    } else if (currentQuestion === 10 && answers.length === 1 && answers[0].value === 'c') {
+    } else if (currentQuestion === 10 && legtarr === 'c') {
         correctAnswers++;
     }
     
@@ -54,7 +55,7 @@ function checkAnswers(answers) {
 function showResult() {
     var resultElement = document.getElementById('result');
     resultElement.innerHTML = '<h2>Результаты теста:</h2>';
-    resultElement.innerHTML += '<p>Вы правильно ответили на ' + correctAnswers + ' из 4 вопросов.</p>';
+    resultElement.innerHTML += '<p>Вы правильно ответили на ' + correctAnswers + ' из 10 вопросов.</p>';
 
     // Показываем кнопку "Вернуться на главную" после вывода результатов
     var homeButton = document.getElementById('homeButton');
